@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./styles/stylePage.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header-content">
+                <h1 class="header-title">To Do List</h1>
+                <p class="header-date"></p>
+            </div>
+            <button class="theme-toggle-btn">
+                <!-- <span class="fas fa-sun"></span> -->
+                <span class="fas fa-moon"></span>
+            </button>
+        </header>
+
+        <main class="main">
+
+            <section class="section-add-note">
+                <div class="add-note-form">
+                    <input type="text" class="task-input" id="taskInput" placeholder="Adicione uma nova nota...">
+                    <div class="priority-select">
+                        <label for="priority">Priority:</label>
+                        <select name="priority" id="priority" required>
+                            <option value="" disabled selected>Priority...</option>
+                            <option value="high">Alta</option>
+                            <option value="medium">Média</option>
+                            <option value="low">Baixa</option>
+                        </select>
+                    </div>
+                    <button class="add-btn"  id="addBtn">
+                        + Nova Nota
+                    </button>
+                </div>
+            </section>
+
+            <section class="section-cards">
+
+                <article class="article note-card-todo">
+                
+                    <input type="checkbox" id="taskCheck" name="taskCheck">
+
+                    <div class="note-content">
+                        <p class="note-priority"></p>
+                        <p class="note-text"></p>
+                    </div>
+
+                    <div class="note-actions">
+                        <button class="delete-btn"></button>
+                    </div>
+
+                </article>
+                
+                <article class="article note-card-done">
+                
+                    <!-- <input type="checkbox" id="taskCheck" name="taskCheck">
+
+                    <div class="note-content">
+                        <p class="note-priority"></p>
+                        <p class="note-text"></p>
+                    </div>
+
+                    <div class="note-actions">
+                        <button class="delete-btn"></button> -->
+                    </div>
+                
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer-copyright">
+                &copy; 2025 Alessandro dos Santos Souza Júnior - All rights reserved.
+            </p>
+        </footer>
+
+
+    </div>
+
+    <script type="module" src="./js/pageLogic.js"></script>
+</body>
+
+</html>
