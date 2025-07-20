@@ -5,12 +5,12 @@
     box-sizing: border-box;
 }
 
-body {
+.container {
     margin: 8vh 4vw;
 }
 
 @media (max-aspect-ratio: 1/1) {
-  body {
+  .container {
     margin: 2vh 4vw;
   }
 }
