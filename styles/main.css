@@ -6,19 +6,39 @@
 
 .section-add-note {
     width: 100%;
-    margin: 0 auto;
 }
 
 .add-note-form {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.task-input {
+    width: 40%;
+    resize: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+#priority {
+    padding: 7px 14px;
+    border-radius: 7px;
+}
+
+.add-btn {
+    padding: 7px 14px;
+    border-radius: 7px;
 }
 
 .section-cards {
     width: 100%;
     min-height: 64vh;
-    margin: vh 0;
+    margin: 4vh 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     row-gap: 24px;
@@ -60,10 +80,20 @@
 
 
 @media (max-aspect-ratio: 1/1) {
+  .section-add-note {
+    height: 30vh;
+  }
+
   .add-note-form {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+
+  .task-input {
+    width: 90%;
   }
 }
