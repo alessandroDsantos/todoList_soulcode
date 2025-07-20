@@ -33,6 +33,7 @@
 .add-btn {
     padding: 7px 14px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .section-cards {
@@ -46,7 +47,7 @@
     align-items: center;
 }
 
-.article {
+.article-note-card {
     border: 1px solid black;
     width: 280px;
     height: 200px;
@@ -57,11 +58,20 @@
     border-radius: 5px;
 }
 
+.card-done {
+    background-color: #ddd;
+    text-decoration: line-through;
+}
+
 .note-actions {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#taskCheck {
+    cursor: pointer;
 }
 
 .note-priority {
@@ -73,8 +83,25 @@
     border-bottom-right-radius: 2px;
 }
 
+.priorityColor-red {
+    background-color: #F22;
+}
+
+.priorityColor-yellow {
+    background-color: #FF2;
+}
+
+.priorityColor-green {
+    background-color: #2F2;
+}
+
+.delete-btn {
+    cursor: pointer;
+}
+
 .note-content {
     width: 100%;
+    height: 86%;
     padding: 2px 2px;
 }
 

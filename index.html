@@ -34,8 +34,8 @@
 
             <section class="section-add-note">
 
-                <div class="add-note-form">
-                    <textarea class="task-input" id="taskInput" rows="2" maxlength="160" placeholder="Adicione uma nova nota..."></textarea>
+                <form class="add-note-form" autocomplete="off" onsubmit="addNote(event)">
+                    <textarea class="task-input" id="taskInput" rows="2" maxlength="160" placeholder="Adicione uma nova nota..." required></textarea>
                     <div class="priority-select">
                         <label for="priority">Prioridade:</label>
                         <select name="priority" id="priority" required>
@@ -45,18 +45,18 @@
                             <option value="">Baixa</option>
                         </select>
                     </div>
-                    <button class="add-btn"  id="addBtn">
+                    <button type="submit" class="add-btn" id="addBtn">
                         + Nova Nota
                     </button>
-                </div>
+                </form>
 
             </section>
 
             <section class="section-cards">
 
-                <article class="article note-card-todo">
+                <!-- <article class="article-note-card"> -->
                 
-                    <div class="note-actions">
+                    <!-- <div class="note-actions">
                         <input type="checkbox" id="taskCheck" name="taskCheck">
                         <p class="note-priority">ALTA</p>
                         <button class="delete-btn">
@@ -66,14 +66,9 @@
 
                     <div class="note-content">
                         <p class="note-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit praesentium ullam veritatis repellendus fugiat quas consequuntur commodi officia temporibus.1top</p>
-                    </div>
+                    </div> -->
 
-                </article>
-
-                <!-- <article class="article note-card-done">
-                
-                
-                </article> -->
+                <!-- </article> -->
 
             </section>
 
@@ -88,7 +83,7 @@
 
     </div>
 
-    <script type="module" src="./js/pageLogic.js"></script>
+    <script src="./js/pageLogic.js"></script>
 </body>
 
 </html>

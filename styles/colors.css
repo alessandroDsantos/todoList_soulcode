@@ -7,3 +7,11 @@
   --priority-media: #f0a830;
   --priority-baixa: #56d68e;
 }
+
+body, .container {
+  background-color: #F9FAFB;
+}
+
+.article-note-card {
+  background-color: #FFFFFF;
+}
